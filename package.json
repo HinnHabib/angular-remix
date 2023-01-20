@@ -1,0 +1,14 @@
+{
+  "name": "angular-remix",
+  "version": "1.0.0",
+  "description": "Route by route migration from angular universal to remix.run",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "HinnHabib",
+  "license": "MIT",
+  "workspaces": [
+    "angular"
+  ]
+}
