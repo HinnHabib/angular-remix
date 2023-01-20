@@ -8,7 +8,8 @@
   "author": "HinnHabib",
   "license": "MIT",
   "workspaces": [
-    "angular"
+    "angular",
+    "remix"
   ],
   "dependencies": {
     "@angular/cli": "^15.1.2"
