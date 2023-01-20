@@ -2,10 +2,14 @@
   "name": "angular-remix",
   "version": "1.0.0",
   "description": "Route by route migration from angular universal to remix.run",
+  "engines": {
+    "node": "18",
+    "npm": "8"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "HinnHabib",
+  "author": "HinnHabib (https://habibhinn.com/)",
   "license": "MIT",
   "workspaces": [
     "angular",
@@ -13,5 +17,9 @@
   ],
   "dependencies": {
     "@angular/cli": "^15.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+@github.com:HinnHabib/angular-remix.git"
   }
 }
