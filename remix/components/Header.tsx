@@ -11,13 +11,13 @@ export default function Header() {
                 href={"/"}
                 className="text-base font-medium text-white hover:text-indigo-50"
               >
-                Angular Route
+                Angular Application
               </a>
               <Link
                 to="/remix"
                 className="text-base font-medium text-white hover:text-indigo-50"
               >
-                Remix Route
+                Remix Application
               </Link>
             </div>
           </div>

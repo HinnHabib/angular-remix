@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Route by route migration from angular universal to remix.run",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node build/angular-app/server/main.js"
   },
   "author": "HinnHabib (https://habibhinn.com/)",
   "license": "MIT",
