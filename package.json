@@ -2,10 +2,6 @@
   "name": "angular-remix",
   "version": "1.0.0",
   "description": "Route by route migration from angular universal to remix.run",
-  "engines": {
-    "node": "18",
-    "npm": "8"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
