@@ -4,7 +4,10 @@
   "description": "Route by route migration from angular universal to remix.run",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node build/angular-app/server/main.js"
+    "start": "node build/server/angular/main.js",
+    "build": "npm run build:remix && npm run build:angular",
+    "build:angular": "cd angular && npm run build:ssr",
+    "build:remix": "cd remix && npm run build"
   },
   "author": "HinnHabib (https://habibhinn.com/)",
   "license": "MIT",
@@ -18,5 +21,8 @@
   "repository": {
     "type": "git",
     "url": "git+@github.com:HinnHabib/angular-remix.git"
+  },
+  "devDependencies": {
+    "@netlify/plugin-angular-universal": "^1.0.1"
   }
 }

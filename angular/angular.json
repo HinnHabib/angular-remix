@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "../build/angular-app/browser",
+            "outputPath": "../build/browser/angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": ["zone.js"],
@@ -80,7 +80,7 @@
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "../build/angular-app/server",
+            "outputPath": "../build/server/angular",
             "main": "server.ts",
             "tsConfig": "tsconfig.server.json"
           },

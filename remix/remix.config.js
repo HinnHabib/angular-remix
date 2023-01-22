@@ -2,7 +2,7 @@
 module.exports = {
   ignoredRouteFiles: ["**/.*"],
   appDirectory: "app",
-  assetsBuildDirectory: "../build/remix/build",
-  serverBuildPath: "../build/remix/index.js",
-  publicPath: "/remix/build/",
+  assetsBuildDirectory: "../build/browser/remix",
+  serverBuildPath: "../build/server/index.js",
+  publicPath: "/browser/",
 };
