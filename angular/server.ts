@@ -9,14 +9,15 @@ const { createRequestHandler } = require('@remix-run/express');
 
 import { AppServerModule } from './src/main.server';
 const BASE_PATH = process.cwd().split(sep);
-BASE_PATH.pop();
+// BASE_PATH.pop();
 
 const REMIX_BASE_PATH = join(sep, ...BASE_PATH, 'build');
+const BROWSER_FILES_BASE_PATH = join(REMIX_BASE_PATH, 'browser');
 
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {
   const server = express();
-  const distFolder = join(sep, ...BASE_PATH, 'build', 'angular-app', 'browser');
+  const distFolder = join(BROWSER_FILES_BASE_PATH, 'angular');
   const indexHtml = existsSync(join(distFolder, 'index.original.html'))
     ? 'index.original.html'
     : 'index';
@@ -33,8 +34,8 @@ export function app(): express.Express {
   server.set('views', distFolder);
 
   server.use(
-    '/public',
-    express.static(join(REMIX_BASE_PATH, 'remix'), {
+    '/browser',
+    express.static(join(BROWSER_FILES_BASE_PATH, 'remix'), {
       immutable: true,
       maxAge: '1y',
     })
@@ -43,7 +44,7 @@ export function app(): express.Express {
   server.get(
     '/remix*',
     createRequestHandler({
-      build: require('../build/remix'),
+      build: require('../build/server/remix'),
     })
   );
 
