@@ -9,7 +9,7 @@
     "test": "ng test",
     "dev:ssr": "ng run angular-app:serve-ssr",
     "serve:ssr": "node dist/angular-app/server/main.js",
-    "build:ssr": "npx ng build && npx ng run angular-app:server",
+    "build:ssr": "ng build && ng run angular-app:server",
     "prerender": "ng run angular-app:prerender"
   },
   "dependencies": {

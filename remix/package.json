@@ -2,12 +2,12 @@
   "private": true,
   "sideEffects": false,
   "scripts": {
-    "build": "npm run build:css && npx remix build",
-    "build:css": "npx tailwindcss -m -i app/styles/app.css -o app/styles/app.css",
+    "build": "npm run build:css && remix build",
+    "build:css": "tailwindcss -m -i app/styles/app.css -o app/styles/app.css",
     "dev": "concurrently \"npm run dev:css\" remix build && run-p \"dev:*\"",
-    "dev:css": "npx tailwindcss -w -i app/styles/app.css -o app/styles/generate.app.css",
+    "dev:css": "tailwindcss -w -i app/styles/app.css -o app/styles/generate.app.css",
     "dev:node": "cross-env NODE_ENV=development nodemon --require dotenv/config ./server.js --watch ./server.js",
-    "dev:remix": "npx remix watch",
+    "dev:remix": "remix watch",
     "start": "cross-env NODE_ENV=production node ./server.js",
     "typecheck": "tsc"
   },
