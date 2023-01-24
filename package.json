@@ -16,7 +16,9 @@
     "remix"
   ],
   "dependencies": {
-    "@angular/cli": "^15.1.2"
+    "@angular/cli": "^15.1.2",
+    "remix": "*",
+    "tailwindcss": "^3.2.4"
   },
   "repository": {
     "type": "git",
