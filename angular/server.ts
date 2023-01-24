@@ -41,12 +41,12 @@ export function app(): express.Express {
     })
   );
 
-  server.get(
-    '/remix*',
-    createRequestHandler({
-      build: require('../build/server/remix'),
-    })
-  );
+  // server.get(
+  //   '/remix*',
+  //   createRequestHandler({
+  //     build: require('../build/server/remix'),
+  //   })
+  // );
 
   // Example Express Rest API endpoints
   // server.get('/api/**', (req, res) => { });
